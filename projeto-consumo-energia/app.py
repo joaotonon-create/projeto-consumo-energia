@@ -44,7 +44,7 @@ st.markdown("""
 # ─── Carregamento dos dados ───────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("dados/simulacao_consumo_energia_brasil.csv", parse_dates=["data"])
+    df = pd.read_csv("projeto-consumo-energia/dados/simulacao_consumo_energia_brasil.csv", parse_dates=["data"])
     return df
 
 df_raw = load_data()
